@@ -1,5 +1,15 @@
-import '@/styles/globals.css'
+import { ThemeProvider } from 'next-themes';
+import '@/styles/globals.css';
+import Navbar from 'components/Navbar';
+import Footer from 'components/Footer';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const App = ({ Component, pageProps }) => (
+  <ThemeProvider attribute="class">
+    <div>
+      <Navbar />
+      <Component {...pageProps} />
+      <Footer />
+    </div>
+  </ThemeProvider>
+);
+export default App;
