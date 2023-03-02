@@ -15,9 +15,11 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: [
+    ['import'],
     'react',
   ],
   rules: {
+    'import/no-named-as-default': 0,
     'no-console': 0,
     'jsx-a11y/label-has-associated-control': 0,
     'no-nested-ternary': 0,

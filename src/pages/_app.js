@@ -1,15 +1,18 @@
+/* eslint-disable import/no-unresolved */
+import Script from 'next/script';
 import { ThemeProvider } from 'next-themes';
+
 import '@/styles/globals.css';
-import Navbar from 'components/Navbar';
-import Footer from 'components/Footer';
+import { Navbar,Footer } from 'components';
 
 const App = ({ Component, pageProps }) => (
   <ThemeProvider attribute="class">
-    <div>
+    <div className=' dark:bg-dark bg-white min-h-screen'>
       <Navbar />
       <Component {...pageProps} />
       <Footer />
     </div>
+    <Script src="https://kit.fontawesome.com/12ea4d44d6.js" crossorigin="anonymous"></Script>
   </ThemeProvider>
 );
 export default App;
