@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 .freeflow-gradient {
-   background: linear-gradient(101.12deg, #EB1484 27.35%, #C91CC3 99.99%, #C81CC5 100%, #C81    CC5 100%);
+    background: linear-gradient(101.12deg, #EB1484 27.35%, #C91CC3 99.99%, #C81CC5 100%, #C81CC5 100%);
 }
 
 .white-bg {
